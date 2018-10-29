@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12ADB43D73F59B0E0142E25 /* Pods_Happy_Roads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */; };
+		E6576EA32185BA1F007DED90 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6576EA22185BA1F007DED90 /* MenuViewController.swift */; };
+		E68DE903218612E500F79417 /* MenuSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DE902218612E500F79417 /* MenuSectionTableViewCell.swift */; };
+		E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DE9042186130400F79417 /* MenuRowTableViewCell.swift */; };
 		E6A10B3A218590AF00744C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B39218590AF00744C9F /* AppDelegate.swift */; };
 		E6A10B3F218590AF00744C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A10B3D218590AF00744C9F /* Main.storyboard */; };
 		E6A10B42218590AF00744C9F /* Happy_Roads.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B40218590AF00744C9F /* Happy_Roads.xcdatamodeld */; };
 		E6A10B44218590B000744C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A10B43218590B000744C9F /* Assets.xcassets */; };
 		E6A10B47218590B000744C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A10B45218590B000744C9F /* LaunchScreen.storyboard */; };
 		E6A10B502185932200744C9F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B4F2185932200744C9F /* LandingViewController.swift */; };
+		E6A10B552185A1F700744C9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B542185A1F700744C9F /* HomeViewController.swift */; };
+		E6A10B572185A26300744C9F /* HomeItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BB97968873973677E286D50 /* Pods-Happy Roads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.release.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.release.xcconfig"; sourceTree = "<group>"; };
+		AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_Roads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC18C3B209A4868CB4786B9 /* Pods-Happy Roads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.debug.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.debug.xcconfig"; sourceTree = "<group>"; };
+		E6576EA22185BA1F007DED90 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E68DE902218612E500F79417 /* MenuSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionTableViewCell.swift; sourceTree = "<group>"; };
+		E68DE9042186130400F79417 /* MenuRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowTableViewCell.swift; sourceTree = "<group>"; };
 		E6A10B36218590AF00744C9F /* Happy Roads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Roads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A10B39218590AF00744C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6A10B3E218590AF00744C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		E6A10B46218590B000744C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6A10B48218590B000744C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A10B4F2185932200744C9F /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		E6A10B542185A1F700744C9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12ADB43D73F59B0E0142E25 /* Pods_Happy_Roads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47292D707458948ADFCD9700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1B4E42DB788913357B99F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFC18C3B209A4868CB4786B9 /* Pods-Happy Roads.debug.xcconfig */,
+				6BB97968873973677E286D50 /* Pods-Happy Roads.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6576EA12185B9FD007DED90 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E6576EA22185BA1F007DED90 /* MenuViewController.swift */,
+				E68DE902218612E500F79417 /* MenuSectionTableViewCell.swift */,
+				E68DE9042186130400F79417 /* MenuRowTableViewCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		E6A10B2D218590AF00744C9F = {
 			isa = PBXGroup;
 			children = (
 				E6A10B38218590AF00744C9F /* Happy Roads */,
 				E6A10B37218590AF00744C9F /* Products */,
+				E1B4E42DB788913357B99F64 /* Pods */,
+				47292D707458948ADFCD9700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +100,8 @@
 		E6A10B38218590AF00744C9F /* Happy Roads */ = {
 			isa = PBXGroup;
 			children = (
-				E6A10B522185941500744C9F /* New Group */,
 				E6A10B39218590AF00744C9F /* AppDelegate.swift */,
-				E6A10B4E2185930000744C9F /* OnBoarding */,
+				E6A10B532185A1E000744C9F /* ViewControllers */,
 				E6A10B512185933500744C9F /* StoryBoards */,
 				E6A10B43218590B000744C9F /* Assets.xcassets */,
 				E6A10B48218590B000744C9F /* Info.plist */,
@@ -84,11 +127,23 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
-		E6A10B522185941500744C9F /* New Group */ = {
+		E6A10B522185941500744C9F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E6A10B542185A1F700744C9F /* HomeViewController.swift */,
+				E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */,
 			);
-			path = "New Group";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E6A10B532185A1E000744C9F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6A10B4E2185930000744C9F /* OnBoarding */,
+				E6A10B522185941500744C9F /* Home */,
+				E6576EA12185B9FD007DED90 /* Menu */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6A10B4B218590B000744C9F /* Build configuration list for PBXNativeTarget "Happy Roads" */;
 			buildPhases = (
+				6E816599A166B0E90F1EA5D4 /* [CP] Check Pods Manifest.lock */,
 				E6A10B32218590AF00744C9F /* Sources */,
 				E6A10B33218590AF00744C9F /* Frameworks */,
 				E6A10B34218590AF00744C9F /* Resources */,
+				AD501AFA04CB9645FB3E0539 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,14 +214,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E816599A166B0E90F1EA5D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Happy Roads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD501AFA04CB9645FB3E0539 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Roads/Pods-Happy Roads-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Happy Roads/Pods-Happy Roads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6A10B32218590AF00744C9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6A10B42218590AF00744C9F /* Happy_Roads.xcdatamodeld in Sources */,
+				E6576EA32185BA1F007DED90 /* MenuViewController.swift in Sources */,
+				E6A10B572185A26300744C9F /* HomeItemsCollectionViewCell.swift in Sources */,
 				E6A10B502185932200744C9F /* LandingViewController.swift in Sources */,
 				E6A10B3A218590AF00744C9F /* AppDelegate.swift in Sources */,
+				E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */,
+				E68DE903218612E500F79417 /* MenuSectionTableViewCell.swift in Sources */,
+				E6A10B552185A1F700744C9F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +419,7 @@
 		};
 		E6A10B4C218590B000744C9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC18C3B209A4868CB4786B9 /* Pods-Happy Roads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +438,7 @@
 		};
 		E6A10B4D218590B000744C9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB97968873973677E286D50 /* Pods-Happy Roads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
