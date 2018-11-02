@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.7.3)
+  - RevealingSplashView (0.6.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SideMenu (5.0.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - RevealingSplashView
+  - SDWebImage
+  - SideMenu
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - RevealingSplashView
+    - SDWebImage
+    - SideMenu
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SideMenu: 87efd943737bb83aedf0358884d09fcf5576636d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 573b34eee81381913dd0f025f54e9f679f3745de
+
+COCOAPODS: 1.6.0.beta.1

@@ -9,6 +9,7 @@
 import UIKit
 import RevealingSplashView
 import SideMenu
+import SVProgressHUD
 
 class HomeViewController: UIViewController {
 
@@ -79,6 +80,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeItemsCollectionViewCell", for: indexPath) as! HomeItemsCollectionViewCell
         cell.itemImageView.image = homeItemsImagesArray[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.item == 0 {
+            let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreViewController") as! ExploreViewController
+            self.navigationController?.pushViewController(exploreVC, animated: true)
+        }
+        
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

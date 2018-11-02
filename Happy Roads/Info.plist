@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Citrus URL</key>
+	<string>$(BASE_URL_CITRUS)</string>
+	<key>API Address</key>
+	<string>$(API_ADDRESS)</string>
+	<key>API Key</key>
+	<string>$(API_KEY)</string>
+	<key>API Version</key>
+	<string>$(API_VERSION)</string>
+	<key>Image URL</key>
+	<string>$(IMAGE_URL)</string>
+	<key>Image URL without handler</key>
+	<string>$(IMAGE_URL_WITH_OUT_HANDLER)</string>
+	<key>Image URL with handler</key>
+	<string>$(IMAGE_URL_WITH_HANDLER)</string>
+	<key>IImage upload URL</key>
+	<string>$(IMAGE_UPLOAD_URL)</string>
+	<key>Image wether URL</key>
+	<string>$(IMAGE_WETHER_URL)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -32,6 +50,11 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
