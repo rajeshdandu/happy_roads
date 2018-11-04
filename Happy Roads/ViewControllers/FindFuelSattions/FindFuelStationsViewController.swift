@@ -163,7 +163,6 @@ class FindFuelStationsViewController: UIViewController {
         marker1.title="MADHAPUR POLICE STATION"
         marker1.snippet="HYDERABAD"
         marker1.position=CLLocationCoordinate2D(latitude: 17.4395, longitude: 78.3959)
-       
         marker1.map=mapView
         
         let marker2=GMSMarker()
