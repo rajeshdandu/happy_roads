@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     }
     
     func decorateNavigationBar() {
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.isHidden = true
         // Adding logo to left bar button item
         let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
@@ -86,6 +87,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if indexPath.item == 0 {
             let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreViewController") as! ExploreViewController
+            self.navigationController?.pushViewController(exploreVC, animated: true)
+        } else if indexPath.item == 4 {
+            let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "FindFuelStationsViewController") as! FindFuelStationsViewController
             self.navigationController?.pushViewController(exploreVC, animated: true)
         }
         

@@ -47,6 +47,7 @@ class ExploreViewController: UIViewController {
         
         
         self.navigationController?.navigationBar.isTranslucent = false
+        
         let logoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 45, height: 30))
         logoButton.setBackgroundImage(#imageLiteral(resourceName: "back_icon"), for: .normal)
         logoButton.addTarget(self, action: #selector(goBackFromThis), for: .touchUpInside)
