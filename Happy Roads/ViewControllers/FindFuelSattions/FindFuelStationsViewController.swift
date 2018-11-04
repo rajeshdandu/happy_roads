@@ -8,11 +8,13 @@
 
 import UIKit
 import GoogleMaps
+import SideMenu
 
 class FindFuelStationsViewController: UIViewController {
 
-    @IBOutlet weak var displayView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var displayView: UIView!
+  
     @IBOutlet weak var mapHolderView: UIView!
     
     @IBOutlet weak var filterButton: UIButton!
@@ -33,8 +35,6 @@ class FindFuelStationsViewController: UIViewController {
         self.displayMarkers()
 
     }
-    
-    
     func decorateUI() {
         
         self.displayView.isHidden = true
@@ -56,20 +56,18 @@ class FindFuelStationsViewController: UIViewController {
         
         self.view.bringSubviewToFront(displayView)
         self.view.bringSubviewToFront(filterView)
+        self.view.bringSubviewToFront(searchBar)
         
     }
+    
     
     @objc func swipeDown() {
         UIView.animate(withDuration: 0.5, animations: {
             
             self.displayView.frame=CGRect(x: self.displayView.frame.origin.x, y: self.view.frame.height, width: self.displayView.frame.width, height: self.displayView.frame.height)
-            
-            if #available(iOS 11.0, *) {
-                self.filterButton.frame = CGRect(x: self.filterButton.frame.origin.x, y: (self.view.window?.safeAreaInsets.top)!-16, width: self.filterButton.frame.width, height: self.filterButton.frame.height)
-            } else {
-                // Fallback on earlier versions
-            }
-            
+    
+            self.filterButton.frame = CGRect(x: self.filterButton.frame.origin.x, y: self.view.frame.origin.y+610 , width: self.filterButton.frame.width, height: self.filterButton.frame.height)
+          
             self.mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 20)
             
         }) { (completed) in
@@ -99,8 +97,14 @@ class FindFuelStationsViewController: UIViewController {
         logoButton.addTarget(self, action: #selector(goBackFromThis), for: .touchUpInside)
         let barButton = UIBarButtonItem(customView: logoButton)
         self.navigationItem.leftBarButtonItem = barButton
+        
+        let menuBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "menu_icon"), style: .plain, target: self, action: #selector(menuBtnAction))
+        menuBarButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.navigationItem.rightBarButtonItem = menuBarButton
     }
-    
+    @objc func menuBtnAction() {
+        present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+    }
     func addGoogleMap() {
         mapView.frame = self.view.bounds
         mapView.isMyLocationEnabled = true
@@ -223,6 +227,18 @@ extension FindFuelStationsViewController: CLLocationManagerDelegate,GMSMapViewDe
         showFilters = false
         self.filterButton.setBackgroundImage(#imageLiteral(resourceName: "filter_map"), for: .normal)
         self.swipeUp()
+        return true
+    }
+    func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
+        
+        showFilters = false
+        filterButton.setBackgroundImage(#imageLiteral(resourceName: "filter_map"), for: .normal)
+        self.hideFiltersView()
+    
+        if let location = currentLocation {
+            let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude, longitude: location.coordinate.longitude, zoom: 13.0)
+            mapView.animate(to: camera)
+        }
         return true
     }
     

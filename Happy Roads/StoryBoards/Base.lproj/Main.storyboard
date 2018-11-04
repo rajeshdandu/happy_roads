@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fzx-rc-lDt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fzx-rc-lDt">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -424,7 +424,7 @@ Destination</string>
                         <outlet property="filterButton" destination="zR2-Ol-LHO" id="bZ1-dX-caB"/>
                         <outlet property="filterView" destination="K3v-Sz-Kyh" id="Mav-6P-2Xq"/>
                         <outlet property="mapHolderView" destination="qSR-Dg-gD8" id="56d-0B-ihz"/>
-                        <outlet property="searchBar" destination="DHw-Dy-83Y" id="JvR-Ug-KOP"/>
+                        <outlet property="searchBar" destination="DHw-Dy-83Y" id="1Rl-1f-oie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDt-Xa-fSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -631,18 +631,18 @@ Destination</string>
     </scenes>
     <resources>
         <image name="1.png" width="150" height="150"/>
-        <image name="arrow_sidemenu_down" width="24.333333969116211" height="24.333333969116211"/>
-        <image name="destination_icon_home" width="31" height="22.666666030883789"/>
-        <image name="filter_map" width="40.666667938232422" height="40.666667938232422"/>
-        <image name="hi_speed_icon" width="66.333335876464844" height="21.666666030883789"/>
+        <image name="arrow_sidemenu_down" width="24" height="24"/>
+        <image name="destination_icon_home" width="31" height="22"/>
+        <image name="filter_map" width="40" height="40"/>
+        <image name="hi_speed_icon" width="66" height="21"/>
         <image name="homeOne" width="351" height="359"/>
         <image name="img_gradient" width="360" height="57"/>
-        <image name="menu_home" width="37" height="28.666666030883789"/>
-        <image name="menu_icon" width="24" height="20.333333969116211"/>
+        <image name="menu_home" width="37" height="28"/>
+        <image name="menu_icon" width="24" height="20"/>
         <image name="menu_setting" width="25" height="26"/>
-        <image name="radius_icon_home_select" width="22.333333969116211" height="25.666666030883789"/>
-        <image name="round_home_selected" width="22.666666030883789" height="22.666666030883789"/>
-        <image name="speed_icon" width="65" height="23.333333969116211"/>
-        <image name="user_profile_my_account" width="97.666664123535156" height="97.666664123535156"/>
+        <image name="radius_icon_home_select" width="22" height="25"/>
+        <image name="round_home_selected" width="22" height="22"/>
+        <image name="speed_icon" width="65" height="23"/>
+        <image name="user_profile_my_account" width="97" height="97"/>
     </resources>
 </document>
