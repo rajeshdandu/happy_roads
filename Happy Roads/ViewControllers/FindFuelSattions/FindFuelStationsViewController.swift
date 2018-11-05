@@ -50,6 +50,18 @@ class FindFuelStationsViewController: UIViewController {
         self.displayView.layer.borderWidth = 1
         self.displayView.layer.masksToBounds = true
         
+        self.filterView.layer.cornerRadius = 8
+        self.filterView.layer.masksToBounds = false
+        self.filterView.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        self.filterView.layer.shadowRadius = 5
+        self.filterView.layer.shadowOpacity = 0.5
+        
+        self.filterButton.layer.cornerRadius = 30
+        self.filterButton.layer.masksToBounds = false
+        self.filterButton.layer.shadowColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        self.filterButton.layer.shadowRadius = 5
+        self.filterButton.layer.shadowOpacity = 0.5
+        
         let swipeView = UISwipeGestureRecognizer(target: self, action: #selector(swipeDown))
         swipeView.direction = .down
         self.displayView.addGestureRecognizer(swipeView)
@@ -146,8 +158,6 @@ class FindFuelStationsViewController: UIViewController {
         }
         
     }
-
-    #warning("Clean up this code after API done")
 
     func displayMarkers() {
         

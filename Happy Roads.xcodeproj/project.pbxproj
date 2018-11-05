@@ -43,6 +43,7 @@
 		E6CFF7B621877BFA00B2F600 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7B521877BFA00B2F600 /* Environment.swift */; };
 		E6CFF7BA218786BB00B2F600 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7B9218786BB00B2F600 /* BaseRequest.swift */; };
 		E6CFF7BD21878A2C00B2F600 /* UIViewController+Extenssions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */; };
+		E6D133E6218F49B70043AF68 /* HRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D133E5218F49B70043AF68 /* HRTextField.swift */; };
 		E6E1D65A2188A65C0057ED28 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D6592188A65C0057ED28 /* RequestType.swift */; };
 		E6E1D65C2188B92A0057ED28 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D65B2188B92A0057ED28 /* ExploreViewController.swift */; };
 		E6E1D65E2188BB760057ED28 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */; };
@@ -91,6 +92,7 @@
 		E6CFF7B521877BFA00B2F600 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E6CFF7B9218786BB00B2F600 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extenssions.swift"; sourceTree = "<group>"; };
+		E6D133E5218F49B70043AF68 /* HRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTextField.swift; sourceTree = "<group>"; };
 		E6E1D6592188A65C0057ED28 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		E6E1D65B2188B92A0057ED28 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				E64575102189FCBD00B7BBD9 /* HappyRoadsUtilities.swift */,
 				E645753C218AD40B00B7BBD9 /* LoadingViewController.swift */,
+				E6D133E4218F497C0043AF68 /* Designables */,
 			);
 			path = HappyRoadsUtilitis;
 			sourceTree = "<group>";
@@ -269,6 +272,14 @@
 				E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */,
 			);
 			path = Extenssions;
+			sourceTree = "<group>";
+		};
+		E6D133E4218F497C0043AF68 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				E6D133E5218F49B70043AF68 /* HRTextField.swift */,
+			);
+			path = Designables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +460,7 @@
 				E6A10B572185A26300744C9F /* HomeItemsCollectionViewCell.swift in Sources */,
 				E6A10B502185932200744C9F /* LandingViewController.swift in Sources */,
 				E6CFF7B621877BFA00B2F600 /* Environment.swift in Sources */,
+				E6D133E6218F49B70043AF68 /* HRTextField.swift in Sources */,
 				E6A10B3A218590AF00744C9F /* AppDelegate.swift in Sources */,
 				E6CFF7BA218786BB00B2F600 /* BaseRequest.swift in Sources */,
 				E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */,
