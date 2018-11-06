@@ -15,15 +15,14 @@ class ExploreViewController: UIViewController {
     @IBOutlet weak var travelTypesTableView: UITableView!
     
     @IBOutlet weak var kDIconImageView: UIImageView!
-  
     @IBOutlet weak var kDLabel: UILabel!
     @IBOutlet weak var kDSupportView: UIView!
+    @IBOutlet weak var kDButton: UIButton!
     
     @IBOutlet weak var nBDIconImageView: UIImageView!
     @IBOutlet weak var nBDLabel: UILabel!
     @IBOutlet weak var nBDSupportView: UIView!
-    
-    @IBOutlet weak var filterViewSpacing: NSLayoutConstraint!
+    @IBOutlet weak var nBDButton: UIButton!
     
     @IBOutlet weak var filterViewHeight: NSLayoutConstraint!
     
@@ -47,6 +46,7 @@ class ExploreViewController: UIViewController {
         
         
         self.navigationController?.navigationBar.isTranslucent = false
+        
         let logoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 45, height: 30))
         logoButton.setBackgroundImage(#imageLiteral(resourceName: "back_icon"), for: .normal)
         logoButton.addTarget(self, action: #selector(goBackFromThis), for: .touchUpInside)
@@ -65,7 +65,6 @@ class ExploreViewController: UIViewController {
   
     
     func loadTravelType() {
-        
         baseRequest.JSONPostService(requestType: .getAllTravelType, parameters: [:], onSucess: { (JSONData) in
             
             if let travelData = JSONData as? [[String : Any]] {

@@ -39,9 +39,11 @@
 		E6A10B502185932200744C9F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B4F2185932200744C9F /* LandingViewController.swift */; };
 		E6A10B552185A1F700744C9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B542185A1F700744C9F /* HomeViewController.swift */; };
 		E6A10B572185A26300744C9F /* HomeItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */; };
+		E6CBD6C6218D7EF700182247 /* FindFuelStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBD6C5218D7EF700182247 /* FindFuelStationsViewController.swift */; };
 		E6CFF7B621877BFA00B2F600 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7B521877BFA00B2F600 /* Environment.swift */; };
 		E6CFF7BA218786BB00B2F600 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7B9218786BB00B2F600 /* BaseRequest.swift */; };
 		E6CFF7BD21878A2C00B2F600 /* UIViewController+Extenssions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */; };
+		E6D133E6218F49B70043AF68 /* HRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D133E5218F49B70043AF68 /* HRTextField.swift */; };
 		E6E1D65A2188A65C0057ED28 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D6592188A65C0057ED28 /* RequestType.swift */; };
 		E6E1D65C2188B92A0057ED28 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D65B2188B92A0057ED28 /* ExploreViewController.swift */; };
 		E6E1D65E2188BB760057ED28 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */; };
@@ -86,9 +88,11 @@
 		E6A10B4F2185932200744C9F /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		E6A10B542185A1F700744C9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6CBD6C5218D7EF700182247 /* FindFuelStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFuelStationsViewController.swift; sourceTree = "<group>"; };
 		E6CFF7B521877BFA00B2F600 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E6CFF7B9218786BB00B2F600 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extenssions.swift"; sourceTree = "<group>"; };
+		E6D133E5218F49B70043AF68 /* HRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTextField.swift; sourceTree = "<group>"; };
 		E6E1D6592188A65C0057ED28 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		E6E1D65B2188B92A0057ED28 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			children = (
 				E64575102189FCBD00B7BBD9 /* HappyRoadsUtilities.swift */,
 				E645753C218AD40B00B7BBD9 /* LoadingViewController.swift */,
+				E6D133E4218F497C0043AF68 /* Designables */,
 			);
 			path = HappyRoadsUtilitis;
 			sourceTree = "<group>";
@@ -238,8 +243,17 @@
 				E6A10B4E2185930000744C9F /* OnBoarding */,
 				E6A10B522185941500744C9F /* Home */,
 				E6576EA12185B9FD007DED90 /* Menu */,
+				E6CBD6C4218D7EAA00182247 /* FindFuelSattions */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E6CBD6C4218D7EAA00182247 /* FindFuelSattions */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBD6C5218D7EF700182247 /* FindFuelStationsViewController.swift */,
+			);
+			path = FindFuelSattions;
 			sourceTree = "<group>";
 		};
 		E6CFF7B421877BCE00B2F600 /* Services */ = {
@@ -260,6 +274,14 @@
 			path = Extenssions;
 			sourceTree = "<group>";
 		};
+		E6D133E4218F497C0043AF68 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				E6D133E5218F49B70043AF68 /* HRTextField.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +294,7 @@
 				E6A10B33218590AF00744C9F /* Frameworks */,
 				E6A10B34218590AF00744C9F /* Resources */,
 				AD501AFA04CB9645FB3E0539 /* [CP] Embed Pods Frameworks */,
+				F21A980B302D05ECE1DB25F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,6 +422,30 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Happy Roads/Pods-Happy Roads-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F21A980B302D05ECE1DB25F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Happy Roads/Pods-Happy Roads-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Happy Roads/Pods-Happy Roads-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,9 +460,11 @@
 				E6A10B572185A26300744C9F /* HomeItemsCollectionViewCell.swift in Sources */,
 				E6A10B502185932200744C9F /* LandingViewController.swift in Sources */,
 				E6CFF7B621877BFA00B2F600 /* Environment.swift in Sources */,
+				E6D133E6218F49B70043AF68 /* HRTextField.swift in Sources */,
 				E6A10B3A218590AF00744C9F /* AppDelegate.swift in Sources */,
 				E6CFF7BA218786BB00B2F600 /* BaseRequest.swift in Sources */,
 				E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */,
+				E6CBD6C6218D7EF700182247 /* FindFuelStationsViewController.swift in Sources */,
 				E68DE903218612E500F79417 /* MenuSectionTableViewCell.swift in Sources */,
 				E64575112189FCBD00B7BBD9 /* HappyRoadsUtilities.swift in Sources */,
 				E6E1D65C2188B92A0057ED28 /* ExploreViewController.swift in Sources */,
