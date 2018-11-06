@@ -13,20 +13,11 @@ class SignUpPopUpViewController: UIViewController {
 
     
     @IBOutlet weak var loginView: UIView!
-    
-    
-    
     @IBOutlet weak var backgroundView: UIView!
-    
-    
     @IBOutlet weak var nameTextField: JVFloatLabeledTextField!
-    
     @IBOutlet weak var mobileTextField: JVFloatLabeledTextField!
-    
     @IBOutlet weak var emailTextField: JVFloatLabeledTextField!
-    
     @IBOutlet weak var passwordTextField: JVFloatLabeledTextField!
-    
     @IBOutlet weak var loginEmailTextField: JVFloatLabeledTextField!
     
     @IBOutlet weak var loginPasswordTextField: JVFloatLabeledTextField!
