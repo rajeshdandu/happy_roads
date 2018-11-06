@@ -149,6 +149,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "ReleaseProduction" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
@@ -156,6 +157,7 @@ if [[ "$CONFIGURATION" == "ReleaseProduction" ]]; then
 fi
 if [[ "$CONFIGURATION" == "DebugDevelopment" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"

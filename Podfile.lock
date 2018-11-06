@@ -7,6 +7,7 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - JVFloatLabeledTextField (1.2.1)
   - RevealingSplashView (0.6.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Alamofire
   - GoogleMaps
   - GooglePlaces
+  - JVFloatLabeledTextField
   - RevealingSplashView
   - SDWebImage
   - SideMenu
@@ -28,6 +30,7 @@ SPEC REPOS:
     - Alamofire
     - GoogleMaps
     - GooglePlaces
+    - JVFloatLabeledTextField
     - RevealingSplashView
     - SDWebImage
     - SideMenu
@@ -37,11 +40,12 @@ SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SideMenu: 87efd943737bb83aedf0358884d09fcf5576636d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 895b8a3219a78326c710b52b494caf4122ddcde8
+PODFILE CHECKSUM: 3ce527b6fef2c841a925e8f421b24a823c1390d9
 
 COCOAPODS: 1.6.0.beta.1

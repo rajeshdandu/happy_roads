@@ -88,6 +88,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if indexPath.item == 0 {
             let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "ExploreViewController") as! ExploreViewController
             self.navigationController?.pushViewController(exploreVC, animated: true)
+        } else if indexPath.item == 1 {
+            let signUpPopUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpPopUpViewController") as! SignUpPopUpViewController
+            signUpPopUpVC.modalPresentationStyle = .overCurrentContext
+            self.present(signUpPopUpVC, animated: true, completion: nil)
         } else if indexPath.item == 4 {
             let exploreVC = self.storyboard?.instantiateViewController(withIdentifier: "FindFuelStationsViewController") as! FindFuelStationsViewController
             self.navigationController?.pushViewController(exploreVC, animated: true)
