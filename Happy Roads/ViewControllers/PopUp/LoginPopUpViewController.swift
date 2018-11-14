@@ -1,19 +1,18 @@
 //
-//  SignUpPopUpViewController.swift
+//  LoginPopUpViewController.swift
 //  Happy Roads
 //
-//  Created by Saikumar on 06/11/18.
+//  Created by Saikumar on 07/11/18.
 //  Copyright © 2018 Saikumar. All rights reserved.
 //
 
 import UIKit
 import JVFloatLabeledTextField
 
-class SignUpPopUpViewController: UIViewController {
+class LoginPopUpViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var nameTextField: JVFloatLabeledTextField!
-    @IBOutlet weak var mobileTextField: JVFloatLabeledTextField!
+    
     @IBOutlet weak var emailTextField: JVFloatLabeledTextField!
     @IBOutlet weak var passwordTextField: JVFloatLabeledTextField!
     
@@ -21,12 +20,9 @@ class SignUpPopUpViewController: UIViewController {
         super.viewDidLoad()
         designUI()
         onPopBackgroundBlur()
-        // Do any additional setup after loading the view.
     }
     
     func designUI() {
-        nameTextField.useUnderlineColor()
-        mobileTextField.useUnderlineColor()
         emailTextField.useUnderlineColor()
         passwordTextField.useUnderlineColor()
     }
@@ -39,28 +35,26 @@ class SignUpPopUpViewController: UIViewController {
         backgroundView.addSubview(blurEffectView)
     }
     
-
-    
     @IBAction func loginBtnAction(_ sender: Any) {
+    }
+    
+    @IBAction func signUpBtnAction(_ sender: Any) {
         if let vc = self.presentingViewController {
             self.dismiss(animated: true) {
-                let loginPopUpVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginPopUpViewController") as! LoginPopUpViewController
-                loginPopUpVC.modalPresentationStyle = .overCurrentContext
-                vc.present(loginPopUpVC, animated: true, completion: nil)
+                let signUpPopUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpPopUpViewController") as! SignUpPopUpViewController
+                signUpPopUpVC.modalPresentationStyle = .overCurrentContext
+                vc.present(signUpPopUpVC, animated: true, completion: nil)
             }
         }
     }
     
-    @IBAction func signUpBtnAction(_ sender: Any) {
-    }
-    
     
     @IBAction func closeBtnAction(_ sender: UIButton) {
-        
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     
+    @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
+    }
     
 }

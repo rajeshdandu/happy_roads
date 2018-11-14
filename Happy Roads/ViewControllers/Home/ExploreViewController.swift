@@ -18,13 +18,20 @@ class ExploreViewController: UIViewController {
     @IBOutlet weak var kDLabel: UILabel!
     @IBOutlet weak var kDSupportView: UIView!
     @IBOutlet weak var kDButton: UIButton!
+    @IBOutlet weak var kDTextField: UITextField!
     
     @IBOutlet weak var nBDIconImageView: UIImageView!
     @IBOutlet weak var nBDLabel: UILabel!
     @IBOutlet weak var nBDSupportView: UIView!
     @IBOutlet weak var nBDButton: UIButton!
     
+    @IBOutlet weak var nBSlider: UISlider!
+  
     @IBOutlet weak var filterViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var componetsViewHeight: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var discoverBtn: UIButton!
     
     let baseRequest = BaseRequest()
     var travelType = [[String: Any]]()
@@ -35,7 +42,37 @@ class ExploreViewController: UIViewController {
         super.viewDidLoad()
         HappyRoadsUtilities.shared.startLoading()
         decorateNavigationBar()
+        decorateUI()
         loadTravelType()
+    }
+    
+    func decorateUI() {
+        
+        kDTextField.backgroundColor = .clear
+        kDTextField.borderStyle = .none
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: kDTextField.frame.size.height, height: kDTextField.frame.size.height))
+        view.backgroundColor = .clear
+        view.layer.cornerRadius = 4
+        
+        let imageView = UIImageView(frame: CGRect(x: view.frame.origin.x+6, y: view.frame.origin.x+6, width: view.frame.size.width-12, height: view.frame.size.height-12))
+        
+        kDTextField.attributedPlaceholder = NSAttributedString(string: kDTextField.placeholder!, attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)])
+ 
+        kDTextField.leftViewMode = .always
+        kDTextField.leftView = view
+        imageView.image = #imageLiteral(resourceName: "destination_icon_home")
+        imageView.contentMode = .scaleAspectFit
+        view.addSubview(imageView)
+        
+        kDTextField.useUnderlineColor()
+        
+        self.kDTextField.isHidden = true
+        self.nBSlider.isHidden = true
+        self.componetsViewHeight.constant = 1
+        
+        self.discoverBtn.isHidden = true
+       
     }
     
     func decorateNavigationBar() {
@@ -43,8 +80,6 @@ class ExploreViewController: UIViewController {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 45))
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.navigationController?.navigationBar.inputView?.addSubview(view)
-        
-        
         self.navigationController?.navigationBar.isTranslucent = false
         
         let logoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 45, height: 30))
@@ -82,6 +117,33 @@ class ExploreViewController: UIViewController {
         
     }
     
+    @IBAction func kDButtonAction(_ sender: UIButton) {
+        self.filterViewHeight.constant = 40
+        self.kDLabel.isHidden = true
+        self.nBDLabel.isHidden = true
+        self.componetsViewHeight.constant = 70
+        self.kDTextField.isHidden = false
+        self.nBSlider.isHidden = true
+        
+        self.kDIconImageView.image = #imageLiteral(resourceName: "destination_icon_home")
+        self.nBDIconImageView.image = #imageLiteral(resourceName: "radius_icon_home_select")
+
+    }
+    
+    @IBAction func nBDButtionAction(_ sender: UIButton) {
+        self.compressFiltersView()
+        self.filterViewHeight.constant = 40
+        self.kDLabel.isHidden = true
+        self.nBDLabel.isHidden = true
+        self.componetsViewHeight.constant = 70
+        self.kDTextField.isHidden = true
+        self.nBSlider.isHidden = false
+        
+        self.kDIconImageView.image = #imageLiteral(resourceName: "destination_icon_home")
+        self.nBDIconImageView.image = #imageLiteral(resourceName: "radius_icon_home_select")
+
+    }
+    
     
     @IBAction func selectionButtonAction(_ sender: UIButton) {
         
@@ -90,17 +152,45 @@ class ExploreViewController: UIViewController {
         self.selectionArray[indexPath.row].toggle()
         self.travelTypesTableView.reloadData()
         
+        discoverButtonAction()
+        
     }
     
+    func discoverButtonAction() {
+        if selectionArray.contains(true) {
+            self.discoverBtn.isHidden = false
+            UIView.animate(withDuration: 0.5) {
+                self.discoverBtn.alpha = 1
+            }
+        } else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.discoverBtn.alpha = 0
+            }) { (completed) in
+                self.discoverBtn.isHidden = true
+            }
+        }
+    }
+    
+    @IBAction func discoverButtonAction(_ sender: UIButton) {
+        
+        
+        
+    }
     
     func compressFiltersView() {
         self.filterViewHeight.constant = 40
+        self.componetsViewHeight.constant = 1
         self.kDLabel.isHidden = true
         self.nBDLabel.isHidden = true
+        self.kDTextField.isHidden = true
+        self.nBSlider.isHidden = true
+        
+        self.nBDIconImageView.image = #imageLiteral(resourceName: "radius_icon_home_select")
+        self.kDIconImageView.image = #imageLiteral(resourceName: "destination_icon_home")
     }
     
     func expandFiltersView() {
-        self.filterViewHeight.constant = 80
+        self.filterViewHeight.constant = 70
         self.kDLabel.isHidden = false
         self.nBDLabel.isHidden = false
     }
@@ -135,6 +225,8 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource, UIS
             cell.exploreTitleLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
         
+        discoverButtonAction()
+        
         return cell
     }
     
@@ -145,15 +237,11 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource, UIS
     
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        print(scrollView.contentOffset.y)
-        
         if  scrollView.contentOffset.y > 0 {
             self.compressFiltersView()
         } else {
             self.expandFiltersView()
         }
-        
     }
     
 }
