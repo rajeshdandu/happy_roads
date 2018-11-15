@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0490D949219D79BD0065357E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D948219D79BC0065357E /* DiscoverViewController.swift */; };
+		0490D94B219D85410065357E /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D94A219D85410065357E /* DiscoverTableViewCell.swift */; };
 		A12ADB43D73F59B0E0142E25 /* Pods_Happy_Roads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */; };
 		E64575112189FCBD00B7BBD9 /* HappyRoadsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64575102189FCBD00B7BBD9 /* HappyRoadsUtilities.swift */; };
 		E6457525218A026400B7BBD9 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E6457513218A026100B7BBD9 /* 4.png */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0490D948219D79BC0065357E /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		0490D94A219D85410065357E /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		6BB97968873973677E286D50 /* Pods-Happy Roads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.release.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.release.xcconfig"; sourceTree = "<group>"; };
 		8FD4A306E77C08DFEB4665D0 /* Pods-Happy Roads.releaseproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.releaseproduction.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.releaseproduction.xcconfig"; sourceTree = "<group>"; };
 		AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy_Roads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +243,8 @@
 				E6A10B562185A26300744C9F /* HomeItemsCollectionViewCell.swift */,
 				E6E1D65B2188B92A0057ED28 /* ExploreViewController.swift */,
 				E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */,
+				0490D948219D79BC0065357E /* DiscoverViewController.swift */,
+				0490D94A219D85410065357E /* DiscoverTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 				E6CFF7B621877BFA00B2F600 /* Environment.swift in Sources */,
 				E6D133E6218F49B70043AF68 /* HRTextField.swift in Sources */,
 				E6C1CDEF2191723D00B8446F /* SignUpPopUpViewController.swift in Sources */,
+				0490D94B219D85410065357E /* DiscoverTableViewCell.swift in Sources */,
 				E6A10B3A218590AF00744C9F /* AppDelegate.swift in Sources */,
 				E6CFF7BA218786BB00B2F600 /* BaseRequest.swift in Sources */,
 				E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */,
@@ -491,6 +498,7 @@
 				E64575112189FCBD00B7BBD9 /* HappyRoadsUtilities.swift in Sources */,
 				E6E1D65C2188B92A0057ED28 /* ExploreViewController.swift in Sources */,
 				E6E1D65E2188BB760057ED28 /* ExploreTableViewCell.swift in Sources */,
+				0490D949219D79BD0065357E /* DiscoverViewController.swift in Sources */,
 				E6A10B552185A1F700744C9F /* HomeViewController.swift in Sources */,
 				E6E1D65A2188A65C0057ED28 /* RequestType.swift in Sources */,
 			);

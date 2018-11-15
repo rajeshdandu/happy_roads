@@ -357,10 +357,10 @@ Destination</string>
             </objects>
             <point key="canvasLocation" x="1489" y="34"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover View Controller-->
         <scene sceneID="FHm-KF-KfA">
             <objects>
-                <viewController id="i4c-uh-IKh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscoverViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i4c-uh-IKh" customClass="DiscoverViewController" customModule="Happy_Roads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffc-c7-NVk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,7 +370,7 @@ Destination</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExploreTableViewCell" rowHeight="186" id="Hfv-qs-lt1" customClass="ExploreTableViewCell" customModule="Happy_Roads" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCell" rowHeight="186" id="Hfv-qs-lt1" customClass="DiscoverTableViewCell" customModule="Happy_Roads" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="186"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hfv-qs-lt1" id="0w7-jt-0eX">
@@ -480,7 +480,11 @@ Destination</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="exploreImageView" destination="H3v-Bt-BJ7" id="KAk-Rn-pZt"/>
+                                            <outlet property="addToFavouritesBtn" destination="jGl-re-6bQ" id="Zmg-sF-5As"/>
+                                            <outlet property="distanceIcon" destination="J7G-xz-ek2" id="7pn-OL-Q6j"/>
+                                            <outlet property="exploreImageView" destination="H3v-Bt-BJ7" id="8Jm-N1-v74"/>
+                                            <outlet property="ratingImageView" destination="RSU-mQ-Hu5" id="dmx-Ar-Qbc"/>
+                                            <outlet property="shareBtn" destination="vIV-zm-gBv" id="pXe-5P-FXH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -492,7 +496,7 @@ Destination</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9Z-7H-o7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="33.990147783251231"/>
+            <point key="canvasLocation" x="2340" y="34"/>
         </scene>
         <!--Find Fuel Stations View Controller-->
         <scene sceneID="JbN-i1-aoq">
@@ -1486,26 +1490,26 @@ Destination</string>
     </scenes>
     <resources>
         <image name="1.png" width="150" height="150"/>
-        <image name="arrow_sidemenu_down" width="24.333333969116211" height="24.333333969116211"/>
-        <image name="close_btn_popup" width="19.666666030883789" height="19.666666030883789"/>
-        <image name="destination_icon_home" width="31" height="22.666666030883789"/>
+        <image name="arrow_sidemenu_down" width="24" height="24"/>
+        <image name="close_btn_popup" width="19" height="19"/>
+        <image name="destination_icon_home" width="31" height="22"/>
         <image name="distance_icon" width="29" height="29"/>
-        <image name="filter_map" width="40.666667938232422" height="40.666667938232422"/>
-        <image name="green_tick" width="80.333335876464844" height="80.333335876464844"/>
-        <image name="hi_speed_icon" width="66.333335876464844" height="21.666666030883789"/>
+        <image name="filter_map" width="40" height="40"/>
+        <image name="green_tick" width="80" height="80"/>
+        <image name="hi_speed_icon" width="66" height="21"/>
         <image name="homeOne" width="351" height="359"/>
         <image name="img_gradient" width="360" height="57"/>
         <image name="like_icon_unselected" width="26" height="26"/>
-        <image name="menu_home" width="37" height="28.666666030883789"/>
-        <image name="menu_icon" width="24" height="20.333333969116211"/>
+        <image name="menu_home" width="37" height="28"/>
+        <image name="menu_icon" width="24" height="20"/>
         <image name="menu_setting" width="25" height="26"/>
-        <image name="radius_icon_home_select" width="22.333333969116211" height="25.666666030883789"/>
-        <image name="rating_icon" width="38.333332061767578" height="38.666667938232422"/>
-        <image name="round_home_selected" width="22.666666030883789" height="22.666666030883789"/>
+        <image name="radius_icon_home_select" width="22" height="25"/>
+        <image name="rating_icon" width="38" height="38"/>
+        <image name="round_home_selected" width="22" height="22"/>
         <image name="share_icon_unselected" width="26" height="26"/>
         <image name="social_icon1_invite_frnd_fb" width="45" height="45"/>
         <image name="social_icon5_invite_frnd" width="45" height="45"/>
-        <image name="speed_icon" width="65" height="23.333333969116211"/>
-        <image name="user_profile_my_account" width="97.666664123535156" height="97.666664123535156"/>
+        <image name="speed_icon" width="65" height="23"/>
+        <image name="user_profile_my_account" width="97" height="97"/>
     </resources>
 </document>

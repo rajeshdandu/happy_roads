@@ -173,7 +173,9 @@ class ExploreViewController: UIViewController {
     
     @IBAction func discoverButtonAction(_ sender: UIButton) {
         
-        
+        var discoverVC=self.storyboard?.instantiateViewController(withIdentifier: "DiscoverViewController") as! DiscoverViewController
+        self.navigationController?.pushViewController(discoverVC, animated: true)
+    
         
     }
     
