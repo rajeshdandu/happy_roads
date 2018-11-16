@@ -10,7 +10,7 @@ import UIKit
 import SideMenu
 
 class DiscoverViewController: UIViewController {
-
+    let images=[#imageLiteral(resourceName: "splash"),#imageLiteral(resourceName: "placeholder")]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,24 +52,13 @@ class DiscoverViewController: UIViewController {
     func setUpSideMenu() {
         
         let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: menuVC)
-        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.default.menuWidth = 3*self.view.frame.width/4
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        
+        setUpMenu(viewControllerInstance: menuVC)
     }
     
     func setUpFilterSideMenu() {
         
-        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "FilterMenuViewController") as! FilterMenuViewController
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: menuVC)
-        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.default.menuWidth = 3*self.view.frame.width/4
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        let filterMenuVC = self.storyboard?.instantiateViewController(withIdentifier: "FilterMenuViewController") as! FilterMenuViewController
+        setUpMenu(viewControllerInstance: filterMenuVC)
         
     }
 
@@ -77,13 +66,20 @@ class DiscoverViewController: UIViewController {
 
 extension DiscoverViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "DiscoverTableViewCell", for: indexPath) as! DiscoverTableViewCell
-        
+        cell.exploreImageView.image=images[indexPath.row]
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let aboutVC=self.storyboard?.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+        
+            self.navigationController?.pushViewController(aboutVC, animated: true)
+        aboutVC.displayImageHolder=images[indexPath.row]
+        
     }
     
     

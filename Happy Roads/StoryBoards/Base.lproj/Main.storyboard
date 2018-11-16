@@ -522,6 +522,49 @@ Destination</string>
             </objects>
             <point key="canvasLocation" x="3145" y="38"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="ENB-Jc-IBO">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RAU-GM-FUH" customClass="AboutViewController" customModule="Happy_Roads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t4P-Ff-Yo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-6X-7Yu">
+                                <rect key="frame" x="0.0" y="44" width="375" height="257"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V51-48-1jI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                        <color key="backgroundColor" red="0.16356533770000001" green="0.45410197969999999" blue="0.63296604160000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="V51-48-1jI" firstAttribute="top" secondItem="ApU-6X-7Yu" secondAttribute="top" id="6nt-Dd-clU"/>
+                                    <constraint firstAttribute="width" constant="375" id="JnP-Wl-B5V"/>
+                                    <constraint firstAttribute="height" constant="257" id="L0n-Vk-uIw"/>
+                                    <constraint firstItem="V51-48-1jI" firstAttribute="leading" secondItem="ApU-6X-7Yu" secondAttribute="leading" id="M8l-ha-Erb"/>
+                                    <constraint firstAttribute="bottom" secondItem="V51-48-1jI" secondAttribute="bottom" constant="55" id="a8Z-a9-Udh"/>
+                                    <constraint firstAttribute="trailing" secondItem="V51-48-1jI" secondAttribute="trailing" id="ils-Xi-8Ab"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ApU-6X-7Yu" firstAttribute="top" secondItem="nwU-0x-Zts" secondAttribute="top" id="MiB-E4-5m7"/>
+                            <constraint firstItem="ApU-6X-7Yu" firstAttribute="trailing" secondItem="nwU-0x-Zts" secondAttribute="trailing" id="RvP-Kh-Azf"/>
+                            <constraint firstItem="ApU-6X-7Yu" firstAttribute="leading" secondItem="nwU-0x-Zts" secondAttribute="leading" id="V7w-e4-xb2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nwU-0x-Zts"/>
+                    </view>
+                    <connections>
+                        <outlet property="exploreImageDisplayImageView" destination="V51-48-1jI" id="cwF-A6-LsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65b-p9-ugE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912.8000000000002" y="43.596059113300491"/>
+        </scene>
         <!--Find Fuel Stations View Controller-->
         <scene sceneID="JbN-i1-aoq">
             <objects>

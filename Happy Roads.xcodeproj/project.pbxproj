@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0490D949219D79BD0065357E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D948219D79BC0065357E /* DiscoverViewController.swift */; };
 		0490D94B219D85410065357E /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D94A219D85410065357E /* DiscoverTableViewCell.swift */; };
+		049B1FF1219EE132002EDE5A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1FF0219EE132002EDE5A /* AboutViewController.swift */; };
+		049B1FF3219EE39D002EDE5A /* MenuViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1FF2219EE39D002EDE5A /* MenuViewControllerExtension.swift */; };
 		04D410C5219EA2AA009AD08B /* FilterMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D410C4219EA2AA009AD08B /* FilterMenuViewController.swift */; };
 		A12ADB43D73F59B0E0142E25 /* Pods_Happy_Roads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8DE5C6FA29AD43E16A5496 /* Pods_Happy_Roads.framework */; };
 		E64575112189FCBD00B7BBD9 /* HappyRoadsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64575102189FCBD00B7BBD9 /* HappyRoadsUtilities.swift */; };
@@ -58,6 +60,8 @@
 /* Begin PBXFileReference section */
 		0490D948219D79BC0065357E /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		0490D94A219D85410065357E /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		049B1FF0219EE132002EDE5A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		049B1FF2219EE39D002EDE5A /* MenuViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewControllerExtension.swift; sourceTree = "<group>"; };
 		04D410C4219EA2AA009AD08B /* FilterMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterMenuViewController.swift; sourceTree = "<group>"; };
 		6BB97968873973677E286D50 /* Pods-Happy Roads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.release.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.release.xcconfig"; sourceTree = "<group>"; };
 		8FD4A306E77C08DFEB4665D0 /* Pods-Happy Roads.releaseproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Roads.releaseproduction.xcconfig"; path = "Target Support Files/Pods-Happy Roads/Pods-Happy Roads.releaseproduction.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 				E6E1D65D2188BB760057ED28 /* ExploreTableViewCell.swift */,
 				0490D948219D79BC0065357E /* DiscoverViewController.swift */,
 				0490D94A219D85410065357E /* DiscoverTableViewCell.swift */,
+				049B1FF0219EE132002EDE5A /* AboutViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			children = (
 				E6CFF7BC21878A2C00B2F600 /* UIViewController+Extenssions.swift */,
 				E6C1CDF021917BD400B8446F /* Textfield+Extension.swift */,
+				049B1FF2219EE39D002EDE5A /* MenuViewControllerExtension.swift */,
 			);
 			path = Extenssions;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				E6A10B42218590AF00744C9F /* Happy_Roads.xcdatamodeld in Sources */,
 				E6DF0B3C2192C580008F13DE /* LoginPopUpViewController.swift in Sources */,
 				E6576EA32185BA1F007DED90 /* MenuViewController.swift in Sources */,
+				049B1FF3219EE39D002EDE5A /* MenuViewControllerExtension.swift in Sources */,
 				04D410C5219EA2AA009AD08B /* FilterMenuViewController.swift in Sources */,
 				E6CFF7BD21878A2C00B2F600 /* UIViewController+Extenssions.swift in Sources */,
 				E645753D218AD40B00B7BBD9 /* LoadingViewController.swift in Sources */,
@@ -499,6 +506,7 @@
 				E68DE9052186130400F79417 /* MenuRowTableViewCell.swift in Sources */,
 				E6CBD6C6218D7EF700182247 /* FindFuelStationsViewController.swift in Sources */,
 				E68DE903218612E500F79417 /* MenuSectionTableViewCell.swift in Sources */,
+				049B1FF1219EE132002EDE5A /* AboutViewController.swift in Sources */,
 				E64575112189FCBD00B7BBD9 /* HappyRoadsUtilities.swift in Sources */,
 				E6E1D65C2188B92A0057ED28 /* ExploreViewController.swift in Sources */,
 				E6E1D65E2188BB760057ED28 /* ExploreTableViewCell.swift in Sources */,
