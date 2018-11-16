@@ -12,10 +12,14 @@ class DiscoverTableViewCell: UITableViewCell {
     
     @IBOutlet weak var exploreImageView: UIImageView!
     
-    @IBOutlet weak var distanceIcon: UIImageView!
-    @IBOutlet weak var ratingImageView: UIImageView!
-    @IBOutlet weak var shareBtn: UIButton!
-    @IBOutlet weak var addToFavouritesBtn: UIButton!
+  
+    
+    @IBOutlet weak var ratingLbl: UILabel!
+    
+    @IBOutlet weak var kmDisplayLbl: UILabel!
+    
+    @IBOutlet weak var areaNameLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
