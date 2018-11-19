@@ -50,6 +50,7 @@ class AboutViewController: UIViewController {
     func displayImage()
     {
         exploreImageDisplayImageView.image=displayImageHolder!
+        
     }
     
     
