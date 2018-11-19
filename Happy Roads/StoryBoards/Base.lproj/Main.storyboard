@@ -514,8 +514,8 @@ Destination</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="W27-T6-VzU">
-                                <rect key="frame" x="16" y="77" width="343" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="W27-T6-VzU" userLabel="Clearall stack view">
+                                <rect key="frame" x="16" y="54" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMv-p8-Te6">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -535,8 +535,8 @@ Destination</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="GvC-Qy-tXC">
-                                <rect key="frame" x="16" y="145" width="343" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="GvC-Qy-tXC" userLabel="Distance StackView">
+                                <rect key="frame" x="16" y="122" width="343" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCQ-3G-kjE">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="20"/>
@@ -555,55 +555,168 @@ Destination</string>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" image="arrow_sidemenu_down"/>
+                                        <connections>
+                                            <action selector="onClickDistanceBtn:" destination="yB7-pg-qvj" eventType="touchUpInside" id="LRt-oo-w8g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-OB-39Z">
-                                <rect key="frame" x="16" y="125" width="343" height="1"/>
+                                <rect key="frame" x="16" y="102" width="343" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="V53-Iz-9da"/>
                                     <constraint firstAttribute="width" constant="343" id="vNy-DY-t7W"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JN7-ZF-hdT">
-                                <rect key="frame" x="16" y="173" width="343" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JN7-ZF-hdT" userLabel="DistanceDisplayView">
+                                <rect key="frame" x="16" y="150" width="343" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BkG-bV-LQm"/>
+                                    <constraint firstAttribute="height" constant="42" id="BkG-bV-LQm"/>
                                     <constraint firstAttribute="width" constant="343" id="jgl-g4-tqy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIS-qg-Upb">
-                                <rect key="frame" x="16" y="231" width="343" height="1"/>
+                                <rect key="frame" x="16" y="200" width="343" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Iqa-ch-nq3"/>
                                     <constraint firstAttribute="height" constant="1" id="nbN-Xd-Hyk"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-Hx-doX" userLabel="Rating Stack View">
+                                <rect key="frame" x="16" y="209" width="343" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-t0-0kI">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="5tI-0f-hUP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv8-8C-dGW">
+                                        <rect key="frame" x="323" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="T8u-x7-1yo"/>
+                                            <constraint firstAttribute="width" constant="20" id="k9q-Zp-Ths"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" image="arrow_sidemenu_down"/>
+                                        <connections>
+                                            <action selector="onClickRatingBtn:" destination="yB7-pg-qvj" eventType="touchUpInside" id="3Du-vE-abI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-QN-PH4" userLabel="RatingDisplayView">
+                                <rect key="frame" x="16" y="237" width="343" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="cxL-iJ-r8o"/>
+                                    <constraint firstAttribute="height" constant="42" id="kSm-jn-mkx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-le-geK">
+                                <rect key="frame" x="16" y="287" width="343" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="53l-ga-cBU"/>
+                                    <constraint firstAttribute="height" constant="1" id="yEK-t6-2SR"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="174" translatesAutoresizingMaskIntoConstraints="NO" id="kP2-uI-ag6">
+                                <rect key="frame" x="16" y="296" width="343" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Time to Visit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJU-Hx-zXZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l1-Gc-BNA">
+                                        <rect key="frame" x="323" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="PwU-zL-iy4"/>
+                                            <constraint firstAttribute="height" constant="20" id="uwN-is-JtB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" image="arrow_sidemenu_down"/>
+                                        <connections>
+                                            <action selector="onClickBestTimeToVisitBtn:" destination="yB7-pg-qvj" eventType="touchUpInside" id="pzv-6U-sW8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-MM-Jto" userLabel="RatingDisplayView">
+                                <rect key="frame" x="16" y="324" width="343" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="6HC-Hk-vpm"/>
+                                    <constraint firstAttribute="height" constant="63" id="876-df-ZhN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAi-u8-xKf">
+                                <rect key="frame" x="117" y="685" width="140" height="45"/>
+                                <color key="backgroundColor" red="0.93456906240000004" green="0.85694377590000004" blue="0.16199713239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="68v-Lk-z5v"/>
+                                    <constraint firstAttribute="height" constant="45" id="w3p-jE-YRd"/>
+                                </constraints>
+                                <state key="normal" title="Apply">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16356533765792847" green="0.45410197973251343" blue="0.63296604156494141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.16589924693107605" green="0.45399248600006104" blue="0.63225489854812622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="GvC-Qy-tXC" secondAttribute="trailing" constant="16" id="1aY-AH-8IG"/>
+                            <constraint firstItem="uRS-Hx-doX" firstAttribute="top" secondItem="zIS-qg-Upb" secondAttribute="bottom" constant="8" id="39g-cO-ope"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="mrV-MM-Jto" secondAttribute="trailing" constant="16" id="4Iu-rW-sHs"/>
+                            <constraint firstItem="HAi-u8-xKf" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="117" id="AT7-kk-WT7"/>
                             <constraint firstItem="zIS-qg-Upb" firstAttribute="leading" secondItem="5r6-5b-3QK" secondAttribute="leadingMargin" id="B0I-Ec-CFh"/>
+                            <constraint firstItem="kP2-uI-ag6" firstAttribute="top" secondItem="Sae-le-geK" secondAttribute="bottom" constant="8" id="BXy-XW-erS"/>
                             <constraint firstItem="XkP-OB-39Z" firstAttribute="leading" secondItem="5r6-5b-3QK" secondAttribute="leadingMargin" id="CcT-ba-hkV"/>
+                            <constraint firstItem="mrV-MM-Jto" firstAttribute="top" secondItem="kP2-uI-ag6" secondAttribute="bottom" constant="8" id="Eeo-nI-nGa"/>
                             <constraint firstItem="XkP-OB-39Z" firstAttribute="top" secondItem="W27-T6-VzU" secondAttribute="bottom" constant="18" id="FwW-ep-UlN"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="HAi-u8-xKf" secondAttribute="trailing" constant="118" id="GUW-4S-tx6"/>
+                            <constraint firstItem="Sae-le-geK" firstAttribute="trailing" secondItem="5r6-5b-3QK" secondAttribute="trailingMargin" id="GXO-LM-VeQ"/>
                             <constraint firstItem="zIS-qg-Upb" firstAttribute="trailing" secondItem="5r6-5b-3QK" secondAttribute="trailingMargin" id="Hee-0h-UxC"/>
                             <constraint firstItem="zIS-qg-Upb" firstAttribute="top" secondItem="JN7-ZF-hdT" secondAttribute="bottom" constant="8" id="KGF-iS-u0N"/>
-                            <constraint firstItem="W27-T6-VzU" firstAttribute="top" secondItem="7qm-dr-3DI" secondAttribute="top" constant="33" id="WJi-Gw-PZy"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="kP2-uI-ag6" secondAttribute="trailing" constant="16" id="QDA-yg-uNJ"/>
+                            <constraint firstItem="kP2-uI-ag6" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="Sul-g9-NbX"/>
+                            <constraint firstItem="W27-T6-VzU" firstAttribute="top" secondItem="7qm-dr-3DI" secondAttribute="top" constant="10" id="WJi-Gw-PZy"/>
+                            <constraint firstItem="Sae-le-geK" firstAttribute="leading" secondItem="5r6-5b-3QK" secondAttribute="leadingMargin" id="XQe-zH-00N"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="uRS-Hx-doX" secondAttribute="trailing" constant="16" id="XfK-7j-57h"/>
+                            <constraint firstItem="v7t-QN-PH4" firstAttribute="top" secondItem="uRS-Hx-doX" secondAttribute="bottom" constant="8" id="YLb-Gu-krD"/>
                             <constraint firstItem="JN7-ZF-hdT" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="aND-t3-p4g"/>
                             <constraint firstItem="JN7-ZF-hdT" firstAttribute="top" secondItem="GvC-Qy-tXC" secondAttribute="bottom" constant="8" id="b8F-ln-3h4"/>
                             <constraint firstItem="XkP-OB-39Z" firstAttribute="trailing" secondItem="5r6-5b-3QK" secondAttribute="trailingMargin" id="bmT-RM-jUQ"/>
+                            <constraint firstItem="mrV-MM-Jto" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="dcm-D5-sDN"/>
                             <constraint firstItem="GvC-Qy-tXC" firstAttribute="top" secondItem="XkP-OB-39Z" secondAttribute="bottom" constant="19" id="f7l-oS-iEE"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="v7t-QN-PH4" secondAttribute="trailing" constant="16" id="gMG-69-uoj"/>
+                            <constraint firstItem="uRS-Hx-doX" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="imX-2b-3SK"/>
+                            <constraint firstItem="v7t-QN-PH4" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="lc7-co-nKX"/>
                             <constraint firstItem="W27-T6-VzU" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="ozh-tY-2Wn"/>
+                            <constraint firstItem="7qm-dr-3DI" firstAttribute="bottom" secondItem="HAi-u8-xKf" secondAttribute="bottom" constant="48" id="tjq-r6-l1l"/>
+                            <constraint firstItem="Sae-le-geK" firstAttribute="top" secondItem="v7t-QN-PH4" secondAttribute="bottom" constant="8" id="uPX-gG-Kl7"/>
                             <constraint firstItem="GvC-Qy-tXC" firstAttribute="leading" secondItem="7qm-dr-3DI" secondAttribute="leading" constant="16" id="ubL-BS-kT8"/>
                             <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="W27-T6-VzU" secondAttribute="trailing" constant="16" id="wU5-Y3-GYL"/>
                             <constraint firstItem="7qm-dr-3DI" firstAttribute="trailing" secondItem="JN7-ZF-hdT" secondAttribute="trailing" constant="16" id="zuW-go-t6s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7qm-dr-3DI"/>
                     </view>
+                    <connections>
+                        <outlet property="bestTimeToVisitBtn" destination="7l1-Gc-BNA" id="LVu-c4-xiG"/>
+                        <outlet property="distanceBtn" destination="JMp-yK-mg6" id="52v-Ei-YT4"/>
+                        <outlet property="distanceView" destination="JN7-ZF-hdT" id="FpZ-WM-xcN"/>
+                        <outlet property="ratingBtn" destination="Sv8-8C-dGW" id="gH5-1W-Out"/>
+                        <outlet property="ratingView" destination="v7t-QN-PH4" id="lSx-AK-tnR"/>
+                        <outlet property="timeToVisitView" destination="mrV-MM-Jto" id="ATw-9X-E1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gyg-ta-mu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
